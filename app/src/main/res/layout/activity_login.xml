@@ -10,11 +10,12 @@
         android:id="@+id/imageView5"
         android:layout_width="409dp"
         android:layout_height="256dp"
-        android:src="@tools:sample/avatars"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="124dp"
-        tools:srcCompat="@drawable/pipologo_removebg_preview" />
+        tools:srcCompat="@drawable/pipologo_removebg_preview"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
 
@@ -22,7 +23,7 @@
         android:layout_width="384dp"
         android:layout_height="270dp"
         android:scaleType="matrix"
-        android:src="@tools:sample/avatars"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/top_login" />
@@ -70,7 +71,7 @@
             android:ems="10"
             android:hint="Mật khẩu"
             android:inputType="text"
-            android:padding="16"
+            android:padding="16dp"
             android:textColorHint="#ffffff" />
 
         <LinearLayout
@@ -86,14 +87,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
-                android:src="@tools:sample/avatars"
+
                 tools:srcCompat="@drawable/facebook" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@tools:sample/avatars"
+
                 tools:srcCompat="@drawable/google" />
 
         </LinearLayout>
