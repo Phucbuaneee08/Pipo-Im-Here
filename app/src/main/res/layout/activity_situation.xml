@@ -31,7 +31,7 @@
 
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                    android:src="@mipmap/ic_launcher_foreground" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -90,7 +90,7 @@
                         android:layout_marginStart="0dp"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/hohap" />
+                        android:src="@drawable/hohap" />
 
                     <TextView
                         android:id="@+id/textView17"
@@ -109,7 +109,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -125,7 +125,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/z4735804297058_bf7d1329da16fefe3c7db79912c728e9" />
+                        android:src="@drawable/z4735804297058_bf7d1329da16fefe3c7db79912c728e9" />
 
                     <TextView
                         android:id="@+id/textView18"
@@ -144,7 +144,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -160,7 +160,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/gaytay" />
+                        android:src="@drawable/gaytay" />
 
                     <TextView
                         android:id="@+id/textView19"
@@ -179,7 +179,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -195,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/dotquy" />
+                        android:src="@drawable/dotquy" />
 
                     <TextView
                         android:id="@+id/textView20"
@@ -214,7 +214,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -230,7 +230,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/nghen" />
+                        android:src="@drawable/nghen" />
 
                     <TextView
                         android:id="@+id/textView21"
@@ -249,7 +249,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -265,7 +265,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/bangbo" />
+                        android:src="@drawable/bangbo" />
 
                     <TextView
                         android:id="@+id/textView22"
@@ -284,7 +284,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -300,7 +300,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/hoahoan" />
+                        android:src="@drawable/hoahoan" />
 
                     <TextView
                         android:id="@+id/textView23"
@@ -319,7 +319,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -335,7 +335,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@drawable/bangbo" />
+                        android:src="@drawable/bangbo" />
 
                     <TextView
                         android:id="@+id/textView24"
@@ -354,7 +354,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
-                        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+                        android:src="@mipmap/ic_launcher_foreground" />
                 </LinearLayout>
 
             </LinearLayout>

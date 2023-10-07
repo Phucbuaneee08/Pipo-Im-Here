@@ -39,8 +39,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="23dp"
                         android:layout_margin="4dp"
-                        
-                        tools:srcCompat="@drawable/icons8_home_50" />
+
+                        android:src="@drawable/icons8_home_50" />
 
                     <TextView
                         android:id="@+id/text_home"
@@ -65,7 +65,7 @@
                         android:layout_height="22dp"
                         android:layout_margin="4dp"
 
-                        tools:srcCompat="@drawable/icons8_information_64" />
+                        android:src="@drawable/icons8_information_64" />
 
                     <TextView
                         android:id="@+id/text_info"
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"
 
-                        tools:srcCompat="@drawable/bottom_btn1" />
+                        android:src="@drawable/bottom_btn1" />
 
                     <TextView
                         android:id="@+id/text_xxx"
@@ -115,7 +115,7 @@
                         android:layout_height="22dp"
                         android:layout_margin="4dp"
 
-                        tools:srcCompat="@android:drawable/ic_popup_reminder" />
+                        android:src="@android:drawable/ic_popup_reminder" />
 
                     <TextView
                         android:id="@+id/text_noti"
@@ -139,7 +139,7 @@
                         android:layout_width="79dp"
                         android:layout_height="21dp"
                         android:layout_margin="4dp"
-                        tools:srcCompat="@drawable/icons8_setting_50" />
+                        android:src="@drawable/icons8_setting_50" />
 
                     <TextView
                         android:id="@+id/text_setting"
@@ -161,10 +161,10 @@
             android:layout_gravity="center"
             android:backgroundTint="#AB0001"
             android:clickable="false"
+            android:contentDescription="Thêm mục mới"
             android:tint="#ffffff"
             app:maxImageSize="48dp"
-            tools:srcCompat="@drawable/mic"
-            android:contentDescription="Thêm mục mới"/>
+            android:src="@drawable/mic" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -196,30 +196,31 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    tools:srcCompat="@drawable/background_top" />
+                    android:src="@drawable/background_top" />
+
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="434dp"
-                    android:layout_height="305dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_width="365dp"
+                    android:layout_height="297dp"
 
+                    android:src="@drawable/logo"
                     app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                    app:layout_constraintHorizontal_bias="0.732"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/logo" />
+                    app:layout_constraintStart_toStartOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
                     android:text="Hỗ trợ bạn lúc khẩn cấp"
                     android:textColor="#ffffff"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    tools:layout_editor_absoluteX="36dp"
-                    tools:layout_editor_absoluteY="233dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
@@ -237,8 +238,8 @@
                     android:textColor="#7a7a7a"
                     android:textColorHint="#7a7a7a"
                     android:textStyle="italic"
-                    tools:layout_editor_absoluteX="142dp"
-                    tools:layout_editor_absoluteY="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -274,7 +275,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/image__2_" />
+                                android:src="@drawable/image__2_"/>
 
                             <ImageView
                                 android:id="@+id/icon_situations"
@@ -287,7 +288,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.542"
-                                tools:srcCompat="@android:drawable/ic_dialog_dialer" />
+                                android:src="@android:drawable/ic_dialog_dialer" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -322,7 +323,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/image__2_" />
+                                android:src="@drawable/image__2_" />
 
                             <ImageView
                                 android:id="@+id/icon_emergency"
@@ -335,7 +336,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.448"
-                                tools:srcCompat="@android:drawable/stat_sys_phone_call" />
+                                android:src="@android:drawable/stat_sys_phone_call" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -370,7 +371,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/image__2_" />
+                                android:src="@drawable/image__2_" />
 
                             <ImageView
                                 android:id="@+id/icon_news"
@@ -382,7 +383,7 @@
                                 app:layout_constraintHorizontal_bias="0.508"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/btn_3" />
+                                android:src="@drawable/btn_3" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -424,7 +425,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/image__2_" />
+                                android:src="@drawable/image__2_" />
 
                             <ImageView
                                 android:id="@+id/icon_location"
@@ -436,7 +437,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.509"
-                                tools:srcCompat="@android:drawable/ic_dialog_map" />
+                                android:src="@android:drawable/ic_dialog_map" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -473,7 +474,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/image__2_" />
+                                android:src="@drawable/image__2_" />
 
                             <ImageView
                                 android:id="@+id/icon_fanpage"
@@ -484,7 +485,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/btn_5" />
+                                android:src="@drawable/btn_5" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -519,7 +520,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/image__2_" />
+                                android:src="@drawable/image__2_" />
 
                             <ImageView
                                 android:id="@+id/icon_service"
@@ -530,7 +531,7 @@
                                 app:layout_constraintHorizontal_bias="0.508"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:srcCompat="@drawable/btn_6" />
+                                android:src="@drawable/btn_6" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -8,14 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="409dp"
-        android:layout_height="256dp"
+        android:layout_width="621dp"
+        android:layout_height="397dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="124dp"
-        tools:srcCompat="@drawable/pipologo_removebg_preview"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="70dp"
+        android:src="@drawable/logo" />
 
     <ImageView
 
@@ -26,7 +26,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/top_login" />
+        android:src="@drawable/top_login" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -88,14 +88,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
 
-                tools:srcCompat="@drawable/facebook" />
+                android:src="@drawable/facebook" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                tools:srcCompat="@drawable/google" />
+                android:src="@drawable/google" />
 
         </LinearLayout>
 

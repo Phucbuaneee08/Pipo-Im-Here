@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        tools:srcCompat="@drawable/back_1"
+        android:src="@drawable/back_1"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@drawable/mainpic" />
+        android:src="@drawable/mainpic" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -34,19 +34,19 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@drawable/intro_button" />
+        android:src="@drawable/intro_button" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:text="Welcome to \nPipo I'm here"
+        android:layout_width="502dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="16dp"
+        android:text="Chào mừng  \nSocapcuu24h"
         android:textColor="#ffffff"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintVertical_bias="0.4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
