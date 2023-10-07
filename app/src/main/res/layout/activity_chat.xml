@@ -25,14 +25,12 @@
     <View
         android:id="@+id/viewBackground"
         android:layout_width="417dp"
-        android:layout_height="576dp"
+        android:layout_height="660dp"
         android:background="@drawable/background_content_top"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
@@ -85,7 +83,6 @@
         app:layout_constraintTop_toTopOf="@+id/imageBack"></TextView>
 
     <FrameLayout
-        android:id="@+id/frameLayout"
         android:layout_width="48dp"
         android:layout_height="47dp"
         android:layout_marginEnd="16dp"
@@ -107,8 +104,7 @@
 
     <EditText
         android:layout_width="320dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="4dp"
+        android:layout_height="46dp"
         android:background="@drawable/background_chat_input"
         android:hint="type a message"
         android:imeOptions="actionDone"
@@ -118,12 +114,8 @@
         android:paddingEnd="16dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="830dp"
         tools:ignore="MissingConstraints"></EditText>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
