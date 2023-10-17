@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27274A"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:backgroundTint="#27274A"
+            android:background="#27274A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@drawable/background_top"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hỗ trợ bạn lúc khẩn cấp"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/editTextText"
+                    android:layout_width="251dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/background_search"
+                    android:drawableEnd="@drawable/redsearch_transformed_removebg_preview"
+                    android:elevation="3dp"
+                    android:ems="10"
+                    android:hint="Tìm kiếm..."
+                    android:inputType="text"
+                    android:maxEms="10"
+                    android:paddingStart="16dp"
+                    android:textColor="#7a7a7a"
+                    android:textColorHint="#7a7a7a"
+                    android:textStyle="italic"
+                    tools:layout_editor_absoluteX="142dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/red"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/icon_situations"
+                                android:layout_width="55dp"
+                                android:layout_height="65dp"
+                                android:src="@android:drawable/ic_dialog_dialer" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/text_situations"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tình huống"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/red"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/icon_phonecall"
+                                android:layout_width="55dp"
+                                android:layout_height="65dp"
+                                android:src="@android:drawable/stat_sys_phone_call" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Khẩn cấp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_situation"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/red"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/icon_news"
+                                android:layout_width="55dp"
+                                android:layout_height="65dp"
+                                android:src="@drawable/btn_3" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tình huống"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/red"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/icon_map"
+                                android:layout_width="55dp"
+                                android:layout_height="65dp"
+                                android:src="@android:drawable/ic_dialog_map" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tình huống"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/red"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/icon_star"
+                                android:layout_width="55dp"
+                                android:layout_height="65dp"
+                                android:src="@drawable/btn_5" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tình huống"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/red"
+                            app:cardCornerRadius="100dp">
+
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/icon_service"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.508"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:src="@drawable/btn_6" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/text_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dịch vụ khác"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

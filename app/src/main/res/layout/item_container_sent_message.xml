@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingEnd="5dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:gravity="end"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_mess"
+        android:padding="10dp"
+        android:gravity="center|end"
+        android:background="@drawable/background_sent_message"
+        android:maxWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp">
+        <ImageView
+            android:src="@drawable/baseline_person_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
