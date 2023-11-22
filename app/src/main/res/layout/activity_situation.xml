@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCDCF2">
+    android:background="#FFE6E6">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,54 +20,64 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:background="#37386e">
+                android:background="#FF9C9C">
 
-                <ImageView
-                    android:id="@+id/imageView13"
-                    android:layout_width="79dp"
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="8dp"
-                    android:rotation="180"
-
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/baseline_arrow_back_24"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@mipmap/ic_launcher_foreground" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tình huống"
-                    android:textColor="#ffffff"
+                    android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/imageView13"
+                    app:layout_constraintStart_toStartOf="@+id/back"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp">
+                android:layout_height="70dp"
+                android:background="#FFE6E6">
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/background_search_situation"
-                    android:backgroundTint="#D9D7E1"
-                    android:drawableEnd="@drawable/search"
-                    android:hint="Tình huống cần tìm kiếm ..."
-                    android:padding="10dp"
-                    android:textSize="18sp"
+                    android:id="@+id/editTextText2"
+                    android:layout_width="370dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/background_search"
+                    android:drawableStart="@drawable/baseline_search_24"
+                    android:elevation="3dp"
+                    android:ems="10"
+
+                    android:hint="Tìm kiếm..."
+                    android:inputType="text"
+                    android:maxEms="10"
+                    android:paddingStart="16dp"
+                    android:textColor="#7a7a7a"
+                    android:textColorHint="#7a7a7a"
                     android:textStyle="italic"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="20dp"></EditText>
+                    tools:ignore="MissingConstraints" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -79,7 +89,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:background="#CCC9F1"
+                    android:background="#F4AAB3"
                     android:orientation="horizontal"
                     tools:ignore="ExtraText">
 
@@ -90,6 +100,7 @@
                         android:layout_marginStart="0dp"
                         android:layout_weight="1"
 
+                        android:background="#FDFDFD"
                         android:src="@drawable/hohap" />
 
                     <TextView
@@ -105,11 +116,13 @@
 
                     <ImageView
                         android:id="@+id/imageView33"
-                        android:layout_width="80dp"
+
+                        android:layout_width="10dp"
+
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-
-                        android:src="@mipmap/ic_launcher_foreground" />
+                        android:rotation="180"
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -140,17 +153,18 @@
 
                     <ImageView
                         android:id="@+id/imageView31"
-                        android:layout_width="80dp"
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:rotation="180"
 
-                        android:src="@mipmap/ic_launcher_foreground" />
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:background="#CCC9F1"
+                    android:background="#F4AAB3"
                     android:orientation="horizontal"
                     tools:ignore="ExtraText">
 
@@ -160,6 +174,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
 
+                        android:background="#FFFFFF"
                         android:src="@drawable/gaytay" />
 
                     <TextView
@@ -175,11 +190,13 @@
 
                     <ImageView
                         android:id="@+id/imageView29"
-                        android:layout_width="80dp"
+
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:rotation="180"
 
-                        android:src="@mipmap/ic_launcher_foreground" />
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -210,17 +227,19 @@
 
                     <ImageView
                         android:id="@+id/imageView27"
-                        android:layout_width="80dp"
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:rotation="180"
+                        android:src="@drawable/baseline_arrow_back_24"
 
-                        android:src="@mipmap/ic_launcher_foreground" />
+                        />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:background="#CCC9F1"
+                    android:background="#F4AAB3"
                     android:orientation="horizontal"
                     tools:ignore="ExtraText">
 
@@ -230,6 +249,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
+                        android:background="#FFFFFF"
                         android:src="@drawable/nghen" />
 
                     <TextView
@@ -245,11 +265,11 @@
 
                     <ImageView
                         android:id="@+id/imageView21"
-                        android:layout_width="80dp"
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-
-                        android:src="@mipmap/ic_launcher_foreground" />
+                        android:rotation="180"
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -280,17 +300,19 @@
 
                     <ImageView
                         android:id="@+id/imageView26"
-                        android:layout_width="80dp"
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
 
-                        android:src="@mipmap/ic_launcher_foreground" />
+                        android:layout_weight="1"
+                        android:rotation="180"
+
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:background="#CCC9F1"
+                    android:background="#F4AAB3"
                     android:orientation="horizontal"
                     tools:ignore="ExtraText">
 
@@ -300,7 +322,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
 
-                        android:src="@drawable/hoahoan" />
+                        android:background="#FFFFFF"
+                        android:src="@drawable/dotquy"
+               />
 
                     <TextView
                         android:id="@+id/textView23"
@@ -315,24 +339,26 @@
 
                     <ImageView
                         android:id="@+id/imageView23"
-                        android:layout_width="80dp"
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:rotation="180"
 
-                        android:src="@mipmap/ic_launcher_foreground" />
+
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:background="#FAFAFA"
                     android:orientation="horizontal"
                     tools:ignore="ExtraText">
 
                     <ImageView
                         android:id="@+id/imageView34"
-                        android:layout_width="110dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="122dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
 
                         android:src="@drawable/bangbo" />
@@ -350,10 +376,11 @@
 
                     <ImageView
                         android:id="@+id/imageView35"
-                        android:layout_width="80dp"
+                        android:layout_width="10dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_launcher_foreground" />
+                        android:rotation="180"
+                        android:src="@drawable/baseline_arrow_back_24" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -32,13 +32,13 @@ class MainActivity : AppCompatActivity() {
             true
         }
         binding.mic.setOnClickListener {
-//            val array = arrayOf(Manifest.permission.RECORD_AUDIO,Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//            if (checkPermission()) {
-//
-//            } else {
-//                ActivityCompat.requestPermissions(this,array, 1)
-//            }
-            startActivity(Intent(this,ChatActivity::class.java))
+            val array = arrayOf(Manifest.permission.RECORD_AUDIO,Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            if (checkPermission()) {
+
+            } else {
+                ActivityCompat.requestPermissions(this,array, 1)
+            }
+            startActivity(Intent(this,ChatAIActivity::class.java))
         }
     }
 
